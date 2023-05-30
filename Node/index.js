@@ -8,15 +8,15 @@ app.use(cors())
 app.use(express.json({limit: "50mb"}))
 app.use('/traductor',traductor)
 
-app.get('/',(req,res) => {
-  res.send('welcome');
+app.get('/',(req,res) =>{
+  res.send('aja');
 })
 
 /*app.listen(PORT, () =>{
 	console.log(`Server is listening at http://localhost:${PORT}`)
 })
 
-/*
+
 const express = require('express');
 const { Translate } = require('node-google-translate-skidz');
 
