@@ -1,12 +1,13 @@
 const express = require("express")
 const app = express()
-const PORT = 3001
-const traductor = require('./controlador/traductor')
-const cors = require('cors')
-app.use(cors())
+//const PORT = 3001
+//const traductor = require('./controlador/traductor')
+//const cors = require('cors')
+//app.use(cors())
 
-app.use(express.json({limit: "50mb"}))
-app.use('/traductor',traductor)
+//app.use(express.json({limit: "50mb"}))
+//app.use('/traductor',traductor)
+app.use(express.json());
 
 app.get('/',(req,res) =>{
   res.send('aja');
