@@ -8,7 +8,11 @@ app.use(cors())
 app.use(express.json({limit: "50mb"}))
 app.use('/traductor',traductor)
 
-app.listen(PORT, () =>{
+app.get('/',(req,res) => {
+  res.send('welcome');
+})
+
+/*app.listen(PORT, () =>{
 	console.log(`Server is listening at http://localhost:${PORT}`)
 })
 
