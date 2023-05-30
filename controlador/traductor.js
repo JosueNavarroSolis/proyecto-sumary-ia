@@ -5,7 +5,7 @@ const cohere = require('cohere-ai');
 let texto2
 cohere.init('3AwIkSIwZi6c4aFZZLQYug4QFgU0dfNISYZSpGJb'); // This is your trial API key
 
-process.env.GOOGLE_APPLICATION_CREDENTIALS = 'C:/Users/User/Desktop/IA/Final/Node/sonorous-sign-387807-125648f99467.json';
+process.env.GOOGLE_APPLICATION_CREDENTIALS = '/sonorous-sign-387807-125648f99467.json';
 const { Translate } = require('@google-cloud/translate').v2;
 
 // Crea una instancia del cliente de traducción
